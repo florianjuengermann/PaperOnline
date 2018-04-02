@@ -27,14 +27,14 @@ public class Main {
 						printHelp();
 					}
 				}
-				System.out.println("Launching server on port " + port + "…");
+				System.out.println("Launching server on port " + port + "...");
 				new ServerMain(port);
 			} else {
 				System.out.println("ERROR: invalid parameter, use 's' for starting the server.\n");
 				printHelp();
 			}
 		} else {
-			System.out.println("Launching GUI…");
+			System.out.println("Launching GUI...");
 			startSetup();
 		}
 	}
