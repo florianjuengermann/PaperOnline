@@ -16,13 +16,13 @@ public class GameManager implements Runnable {
 
 	// MAIN GAME VARIABLES/STEPS SYNCED BY THIS!!
 
-	public GameManager(ServerMain serverMain) {
+	public GameManager(ServerMain serverMain, boolean headless) {
 		sm = serverMain;
 		gm = new GameModel(MAP_SIZE);
 		w = MAP_SIZE;
 		maint = new Thread(this);
-		// todo remove renderer
-		new ServerRenderer(this).start();
+		if(!headless)
+			new ServerRenderer(this).start();
 		startTicking();
 	}
 

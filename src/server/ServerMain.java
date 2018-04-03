@@ -12,7 +12,11 @@ public class ServerMain {
 	GameManager gm;
 
 	public ServerMain(int port) {
-		gm = new GameManager(this);
+		this(port, false);
+	}
+
+	public ServerMain(int port, boolean headless) {
+		gm = new GameManager(this, headless);
 		try {
 			ss = new ServerSocket(port);
 			System.out.println("Server started...");

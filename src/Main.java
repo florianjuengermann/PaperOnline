@@ -28,7 +28,7 @@ public class Main {
 					}
 				}
 				System.out.println("Launching server on port " + port + "...");
-				new ServerMain(port);
+				new ServerMain(port, true);
 			} else {
 				System.out.println("ERROR: invalid parameter, use 's' for starting the server.\n");
 				printHelp();
