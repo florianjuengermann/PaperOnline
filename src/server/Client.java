@@ -70,6 +70,7 @@ public class Client {
 					}
 			}
 		} catch (IOException e) {
+			e.printStackTrace();
 			connectionLost();
 		}
 	}
@@ -117,6 +118,7 @@ public class Client {
 				}
 			}
 		} catch (Exception e) {
+			e.printStackTrace();
 			connectionLost();
 		}
 	}
