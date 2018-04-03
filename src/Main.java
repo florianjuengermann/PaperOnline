@@ -34,7 +34,7 @@ public class Main {
 				printHelp();
 			}
 		} else {
-			System.out.println("Launching GUI...");
+			System.out.println("Launching GUI…");
 			startSetup();
 		}
 	}
