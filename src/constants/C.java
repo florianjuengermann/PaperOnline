@@ -37,7 +37,7 @@ public class C {
 
 
 
-	public static final long DELAY = 500; // ms
+	public static final long DELAY = 200; // ms
 
 	// CLIENT
 
