@@ -63,7 +63,8 @@ public class ClientMain implements WindowListener, KeyListener, ComponentListene
 	// todo main should get these params!
 	public ClientMain() {
 //		String[] connDeatails = showSetupWindow("192.168.178.42", 4576, "Player " + (int) (Math.random() * 1000 + 1), null);
-		String[] connDeatails = showSetupWindow("localhost", 5555, "Player " + ((int) (Math.random() * 1000) + 1), null);
+		//String[] connDeatails = showSetupWindow("localhost", 5555, "Player " + ((int) (Math.random() * 1000) + 1), null);
+		String[] connDeatails = showSetupWindow("ff17x3.ddns.net", 5555, "Player " + ((int) (Math.random() * 1000) + 1), null);
 		if (connDeatails != null)
 			init(connDeatails[0], Integer.parseInt(connDeatails[1]), connDeatails[2]);
 	}
